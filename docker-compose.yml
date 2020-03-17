@@ -1,0 +1,13 @@
+version: "3.7"
+
+services:
+  front:
+    build:
+      context: ./front
+      dockerfile: Dockerfile
+    volumes:
+      - ./front:/front
+    container_name: test-front
+    restart: always
+    ports:
+      - 8002:8001
