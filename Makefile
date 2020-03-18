@@ -1,7 +1,7 @@
 d/up:
-	@docker-compose up -d --build
-	open http://localhost:8001/
-	echo see src on front/index.js!
+	@docker-compose up -d --build && \
+	open http://localhost:8001/ && \
+	echo see src on front/index.js! && \
 	echo type 'make d/down' to stop this docker
 
 d/down:
